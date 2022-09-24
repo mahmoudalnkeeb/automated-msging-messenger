@@ -1,0 +1,21 @@
+{
+  "name": "fb-msging-script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-calculator": "set SENDING_TYPE=calculator&& node index.js",
+    "start-single": "set SENDING_TYPE=single&& node index.js",
+    "start-multi": "set SENDING_TYPE=multi&& node index.js",
+    "start-spam": "set SENDING_TYPE=multi2single&& node index.js",
+    "filter-ids": "node ./lib/idsFilter.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "facebook-chat-api": "^1.8.0",
+    "underscore": "^1.13.6"
+  }
+}
